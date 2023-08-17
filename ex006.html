@@ -27,6 +27,7 @@
         a.addEventListener('click', clicar)
         a.addEventListener('mouseenter', entrar)
         a.addEventListener('mouseout', sair)
+        var contador_saiu = 0
 
         function clicar() {
             a.innerText = 'Clicou!'
@@ -36,8 +37,10 @@
             a.innerText = 'Entrou!'
         }
         function sair() {
-            a.innerText = 'Saiu!'
-            a.style.background = 'green'
+            a.innerText = 'interaja...'
+            // a.style.background = rgb(127, 206, 127)
+            contador_saiu++
+            console.log(contador_saiu)
         }
     </script>
 </body>
